@@ -57,6 +57,10 @@ pip install -r requirements.txt
 Run Streamlit app:
 streamlit run app.py
 
+## Dashboard Preview
+
+![Walmart Dashboard](images/dashboard.png)
 
 ## Author
 M. Hammad Shahbaz
+
