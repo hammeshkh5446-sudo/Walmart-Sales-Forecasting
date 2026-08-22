@@ -3,7 +3,7 @@ Walmart Weekly Sales Predictor
 ================================
 A professional, production-style Streamlit dashboard that serves predictions
 from a pre-trained RandomForestRegressor saved at:
-    models/walmart_sales_model_compressed.joblib
+    model/walmart_sales_model_compressed.joblib
 
 This app does NOT train or modify the model in any way. It only loads it
 and uses it for inference.
@@ -22,7 +22,7 @@ import joblib
 # CONSTANTS
 # =============================================================================
 
-MODEL_PATH = "models/walmart_sales_model_compressed.joblib..."
+MODEL_PATH = "model/walmart_sales_model_compressed.joblib..."
 
 # The exact feature order the model was trained on. Used only to validate
 # that the loaded model's saved feature list matches what this app expects.
