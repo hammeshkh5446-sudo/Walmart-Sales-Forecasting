@@ -3,7 +3,7 @@ Walmart Weekly Sales Predictor
 ================================
 A professional, production-style Streamlit dashboard that serves predictions
 from a pre-trained RandomForestRegressor saved at:
-    models/walmart_sales_model.joblib
+    models/walmart_sales_model_compressed.joblib
 
 This app does NOT train or modify the model in any way. It only loads it
 and uses it for inference.
