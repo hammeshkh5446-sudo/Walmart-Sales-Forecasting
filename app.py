@@ -22,7 +22,7 @@ import joblib
 # CONSTANTS
 # =============================================================================
 
-MODEL_PATH = "models/walmart_sales_model.joblib"
+MODEL_PATH = "models/walmart_sales_model_compressed.joblib..."
 
 # The exact feature order the model was trained on. Used only to validate
 # that the loaded model's saved feature list matches what this app expects.
