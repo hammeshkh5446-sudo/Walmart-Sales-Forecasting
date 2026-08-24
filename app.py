@@ -382,7 +382,7 @@ def load_model(path: str):
             "before running this app."
         )
     except Exception as exc:  # covers corrupted / invalid joblib files
-        return None, None, f"The model file could not be loaded. Details: {exc}"
+        return None, None, f"The model file could not be loaded. Details: [{type(exc).__name__}] {exc}"
 
     if not isinstance(model_data, dict) or "model" not in model_data or "features" not in model_data:
         return None, None, (
