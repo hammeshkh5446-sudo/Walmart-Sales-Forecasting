@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 """
 Walmart Weekly Sales Predictor
 ================================
@@ -764,4 +762,3 @@ def main():
 
 if __name__ == "__main__":
     main()
->>>>>>> 9c67f7c6ce1f900f47a268b95984c150fec32cd8
