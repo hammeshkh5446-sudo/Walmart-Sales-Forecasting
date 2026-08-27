@@ -382,7 +382,20 @@ def load_model(path: str):
             "before running this app."
         )
     except Exception as exc:  # covers corrupted / invalid joblib files
-        return None, None, f"The model file could not be loaded. Details: [{type(exc).__name__}] {exc}"
+        try:
+            import sklearn
+            import numpy
+            versions = (
+                f"sklearn={sklearn.__version__}, "
+                f"numpy={numpy.__version__}, "
+                f"joblib={joblib.__version__}"
+            )
+        except Exception:
+            versions = "unknown"
+        return None, None, (
+            f"The model file could not be loaded. Details: [{type(exc).__name__}] {exc}\n\n"
+            f"Installed versions: {versions}"
+        )
 
     if not isinstance(model_data, dict) or "model" not in model_data or "features" not in model_data:
         return None, None, (
